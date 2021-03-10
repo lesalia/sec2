@@ -14,10 +14,9 @@
 <p class="h4">Aguardamos por si.</p>
 
 <div class="col-sm-4 invoice-col" style="color: #0b8b33">
-    Mocambique, Maputo cidade<br>
+    Moçambique, Maputo cidade<br>
     <b>Email:</b>  info@ibe.gov.mz <br>
     <b>Contacto:</b>  84 32 111 29 <br>
-
 </div>
 </body>
 </html>

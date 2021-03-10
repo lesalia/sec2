@@ -17,7 +17,7 @@
 
                 <address>
                     <div class="box-body box-profile">
-                        <img class="profile img-responsive" src="{{asset('/files/logo_unirovuma.png')}}" width="120" alt="User profile picture">
+                        <img class="profile img-responsive" src="{{asset('/files/logo_ibe.png')}}" width="120" alt="User IBE">
                     </div>
                 </address>
             </div>
@@ -25,11 +25,9 @@
 
             </div>
             <div class="col-sm-4 invoice-col" style="color: #0b8b33">
-                Endereco, Montepuez, Ncoripo<br>
-                <b>Email:</b>  cabodelgado@ur.com <br>
                 <b>Extraido por: </b>{{ auth()->user()->name }}<br>
                 <b>A partir de:</b> {{ $data['datainic'] }}<br>
-                <b>Ate:     </b> {{ $data['datafim'] }}<br>
+                <b>Ate: </b> {{ $data['datafim'] }}<br>
             </div>
             <!-- /.col -->
         </div>
@@ -57,11 +55,7 @@
                         <td> {{ $doc->categoria }}</td>
                         <td>{{ ($doc->created_at)->format('d-M-Y') }}</td>
                         <td>{{ $doc->origem }}</td>
-                        <td>@if($doc->estado==1)
-                                <i class="fa fa-check-square text-success"> Despachado</i>
-                            @else
-                                <i class="fa fa-warning text-yellow"> Em Analise</i>
-                            @endif</td>
+                        <td> {{$doc->estado['designacao']}}</td>
                     </tr>
                     @endforeach
                     </tbody>
